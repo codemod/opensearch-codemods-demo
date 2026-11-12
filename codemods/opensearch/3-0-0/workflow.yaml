@@ -1,0 +1,56 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/codemod/codemod/refs/heads/main/schemas/workflow.json
+
+version: "1"
+
+nodes:
+  - id: migrate-opensearch-3-0
+    name: Migrate OpenSearch 2.x → 3.0
+    type: automatic
+    steps:
+      - name: "Rename PathHierarchy tokenizer to path_hierarchy"
+        js-ast-grep:
+          js_file: scripts/codemod.ts
+          base_path: "."
+          language: "typescript"
+          include:
+            - "**/*.{ts,tsx,mts,cts}"
+          exclude:
+            - "**/node_modules/**"
+            - "**/dist/**"
+            - "**/build/**"
+
+      - name: "Rename query groups to workload groups"
+        js-ast-grep:
+          js_file: scripts/query-group-to-workload-group.ts
+          base_path: "."
+          language: "typescript"
+          include:
+            - "**/*.{ts,tsx,mts,cts}"
+          exclude:
+            - "**/node_modules/**"
+            - "**/dist/**"
+            - "**/build/**"
+
+      - name: "Remove compatibility.override_main_response_version"
+        js-ast-grep:
+          js_file: scripts/remove-compatibility-override.ts
+          base_path: "."
+          language: "typescript"
+          include:
+            - "**/*.{ts,tsx,mts,cts}"
+          exclude:
+            - "**/node_modules/**"
+            - "**/dist/**"
+            - "**/build/**"
+
+      - name: "Remove deprecated k-NN settings"
+        js-ast-grep:
+          js_file: scripts/remove-deprecated-knn-settings.ts
+          base_path: "."
+          language: "typescript"
+          include:
+            - "**/*.{ts,tsx,mts,cts}"
+          exclude:
+            - "**/node_modules/**"
+            - "**/dist/**"
+            - "**/build/**"

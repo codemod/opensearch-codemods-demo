@@ -1,0 +1,31 @@
+schema_version: "1.0"
+
+name: "opensearch-2-to-3-0"
+version: "0.1.0"
+description: "Migrate OpenSearch application code and checked-in config from 2.x to 3.0"
+author: "alexbit-codemod <alex@codemod.com>"
+license: "MIT"
+
+targets:
+  languages: ["typescript"]
+
+keywords:
+  - "upgrade"
+  - "breaking-change"
+  - "opensearch"
+  - "2.x"
+  - "3.0"
+  - "path_hierarchy"
+  - "workload-group"
+  - "knn"
+
+registry:
+  access: "public"
+  visibility: "public"
+
+capabilities: []
+
+workflows:
+  - name: main
+    default: true
+    path: workflow.yaml

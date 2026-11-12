@@ -1,0 +1,16 @@
+{
+  "query-group-to-workload-group": [
+    {
+      "cardinality": {
+        "kind": "property-identifier"
+      },
+      "count": 2
+    },
+    {
+      "cardinality": {
+        "kind": "string-literal"
+      },
+      "count": 1
+    }
+  ]
+}

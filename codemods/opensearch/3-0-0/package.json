@@ -1,0 +1,19 @@
+{
+  "name": "opensearch-2-to-3-0",
+  "version": "0.1.0",
+  "description": "Migrate OpenSearch application code and checked-in config from 2.x to 3.0",
+  "packageManager": "npm@10.x",
+  "type": "module",
+  "scripts": {
+    "test": "npm run test:path-hierarchy && npm run test:query-group && npm run test:compatibility && npm run test:knn",
+    "test:path-hierarchy": "npx --yes codemod@1.18.7 jssg test -l typescript ./scripts/codemod.ts ./tests/path-hierarchy",
+    "test:query-group": "npx --yes codemod@1.18.7 jssg test -l typescript ./scripts/query-group-to-workload-group.ts ./tests/query-group-to-workload-group",
+    "test:compatibility": "npx --yes codemod@1.18.7 jssg test -l typescript ./scripts/remove-compatibility-override.ts ./tests/remove-compatibility-override",
+    "test:knn": "npx --yes codemod@1.18.7 jssg test -l typescript ./scripts/remove-deprecated-knn-settings.ts ./tests/remove-deprecated-knn-settings",
+    "check-types": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@codemod.com/jssg-types": "latest",
+    "typescript": "latest"
+  }
+}
