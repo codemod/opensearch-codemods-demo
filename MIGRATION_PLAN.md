@@ -8,7 +8,7 @@
   - https://github.com/opensearch-project/OpenSearch/releases/tag/3.0.0
   - https://docs.opensearch.org/latest/breaking-changes/#300
 - Package(s):
-  1. `opensearch-2-to-3-0` — multi-step: path_hierarchy tokenizer, query_group→workload_group, remove compatibility.override_main_response_version, remove deprecated k-NN settings
+  1. `opensearch-2-x-to-3-0` — multi-step: path_hierarchy tokenizer, query_group→workload_group, remove compatibility.override_main_response_version, remove deprecated k-NN settings
 - Out of scope / manual:
   - Cluster data plane (reindex pre-2.x indexes, system indexes, live traffic) — Migration Assistant
   - JDK 21 runtime requirement

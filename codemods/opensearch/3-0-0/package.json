@@ -1,5 +1,5 @@
 {
-  "name": "opensearch-2-to-3-0",
+  "name": "opensearch-2-x-to-3-0",
   "version": "0.1.0",
   "description": "Migrate OpenSearch application code and checked-in config from 2.x to 3.0",
   "packageManager": "npm@10.x",

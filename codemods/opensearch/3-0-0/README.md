@@ -1,4 +1,4 @@
-# opensearch-2-to-3-0
+# opensearch-2-x-to-3-0
 
 Migrate OpenSearch **application code and checked-in config objects** from 2.x to 3.0.
 
@@ -27,7 +27,7 @@ Transforms are pure AST string/property rewrites (no `semantic_analysis`) becaus
 ## Run
 
 ```bash
-npx codemod@latest opensearch-2-to-3-0 --target .
+npx codemod@latest opensearch-2-x-to-3-0 --target .
 ```
 
 ## Test

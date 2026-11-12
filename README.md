@@ -16,6 +16,6 @@ Each target-version folder is a Codemod package (`codemod.yaml`, `workflow.yaml`
 
 | Path | Registry name | Migration |
 | --- | --- | --- |
-| `codemods/opensearch/3-0-0` | `opensearch-2-to-3-0` | OpenSearch 2.x → 3.0 (app/config) |
+| `codemods/opensearch/3-0-0` | `opensearch-2-x-to-3-0` | OpenSearch 2.x → 3.0 (app/config) |
 
 Cluster data / traffic migration remains in [opensearch-migrations](https://github.com/opensearch-project/opensearch-migrations).
