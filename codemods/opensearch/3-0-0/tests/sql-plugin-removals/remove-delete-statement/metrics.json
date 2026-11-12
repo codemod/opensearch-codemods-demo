@@ -1,0 +1,16 @@
+{
+  "sql-plugin-removals": [
+    {
+      "cardinality": {
+        "kind": "delete-sql-statement"
+      },
+      "count": 1
+    },
+    {
+      "cardinality": {
+        "kind": "plugins.sql.delete.enabled"
+      },
+      "count": 1
+    }
+  ]
+}

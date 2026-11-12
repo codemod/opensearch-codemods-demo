@@ -1,0 +1,10 @@
+{
+  "remove-mmap-extensions": [
+    {
+      "cardinality": {
+        "kind": "index.store.hybrid.mmap.extensions"
+      },
+      "count": 1
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "remove-thread-pool-test-settings": [
+    {
+      "cardinality": {
+        "kind": "thread_pool.test.max_queue_size"
+      },
+      "count": 1
+    },
+    {
+      "cardinality": {
+        "kind": "thread_pool.test.min_queue_size"
+      },
+      "count": 1
+    }
+  ]
+}

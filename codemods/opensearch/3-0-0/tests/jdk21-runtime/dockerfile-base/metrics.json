@@ -1,0 +1,10 @@
+{
+  "jdk21-runtime": [
+    {
+      "cardinality": {
+        "kind": "temurin-image"
+      },
+      "count": 1
+    }
+  ]
+}

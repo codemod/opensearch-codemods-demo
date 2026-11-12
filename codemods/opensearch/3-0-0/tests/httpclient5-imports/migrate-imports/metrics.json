@@ -1,0 +1,16 @@
+{
+  "httpclient5-imports": [
+    {
+      "cardinality": {
+        "kind": "org.apache.http.impl.nio.client.HttpAsyncClientBuilder"
+      },
+      "count": 1
+    },
+    {
+      "cardinality": {
+        "kind": "org.apache.http.nio.entity.NStringEntity"
+      },
+      "count": 1
+    }
+  ]
+}

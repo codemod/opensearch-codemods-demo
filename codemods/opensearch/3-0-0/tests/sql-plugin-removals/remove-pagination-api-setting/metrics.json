@@ -1,0 +1,10 @@
+{
+  "sql-plugin-removals": [
+    {
+      "cardinality": {
+        "kind": "plugins.sql.pagination.api"
+      },
+      "count": 1
+    }
+  ]
+}

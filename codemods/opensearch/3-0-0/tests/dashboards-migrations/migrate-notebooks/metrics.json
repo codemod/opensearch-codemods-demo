@@ -1,0 +1,16 @@
+{
+  "dashboards-migrations": [
+    {
+      "cardinality": {
+        "kind": ".opensearch-observability"
+      },
+      "count": 1
+    },
+    {
+      "cardinality": {
+        "kind": "legacy-flag"
+      },
+      "count": 1
+    }
+  ]
+}

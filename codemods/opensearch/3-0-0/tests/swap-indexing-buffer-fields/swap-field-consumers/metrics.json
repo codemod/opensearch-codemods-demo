@@ -1,0 +1,10 @@
+{
+  "swap-indexing-buffer-fields": [
+    {
+      "cardinality": {
+        "kind": "property_identifier"
+      },
+      "count": 4
+    }
+  ]
+}

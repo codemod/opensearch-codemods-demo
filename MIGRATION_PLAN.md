@@ -8,12 +8,8 @@
   - https://github.com/opensearch-project/OpenSearch/releases/tag/3.0.0
   - https://docs.opensearch.org/latest/breaking-changes/#300
 - Package(s):
-  1. `opensearch-2-x-to-3-0` — multi-step: path_hierarchy tokenizer, query_group→workload_group, remove compatibility.override_main_response_version, remove deprecated k-NN settings
-- Out of scope / manual:
-  - Cluster data plane (reindex pre-2.x indexes, system indexes, live traffic) — Migration Assistant
-  - JDK 21 runtime requirement
-  - Searchable-snapshot `search`→`warm` node role (3.0 also introduces a new `search` role; unsafe to blind-rename)
-  - Security Blake2b salt, Romanian analyzer reindex
-  - Dashboards UI / Performance Analyzer RCA removals
-  - Java client AST (non-inclusive term renames) — follow-up package
-- Test plan: fixtures per step + `workflow validate` + `validate_codemod_package` + package tests
+  1. `opensearch-2-x-to-3-0` — multi-step AST transforms for checked-in TS/JS config and API strings (see package README for the full step list)
+- Break inventory (summary):
+  - **codemod:** PathHierarchy, query→workload group, compatibility override, k-NN settings, mmap extensions, thread_pool.test_*, bulk batch_size, discover:newExperience, SQL OpenDistro/DSL/delete settings, LegacyBM25, NMSLIB engine, COMPAT→CLDR, HttpClient5 class names, JPMS client package, ML Commons tool/URL, non-inclusive terms, Plugin→Module FQCNs, transport-nio, indexing-buffer field swap, node.roles `"[]"`→`[]`, JDK21 markers, system-index paths, Dashboards gantt/notebook strings
+  - **manual** (see `tests/_manual/`): pre-2.x reindex / system-index ops beyond path rewrite, searchable-snapshot `search`→`warm` (unsafe vs new search-only role), Blake2b/Romanian reindex behavior, PA RCA port rewrite as object synthesis, painless Joda script rewrites, ID-length/Jackson/nested-depth control-flow injection, node.roles coordinating-empty heuristics
+- Test plan: wired `jssg test` per step + `workflow validate` + package `npm test`

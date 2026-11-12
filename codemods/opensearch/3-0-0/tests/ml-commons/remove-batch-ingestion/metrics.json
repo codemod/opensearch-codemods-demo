@@ -1,0 +1,10 @@
+{
+  "ml-commons": [
+    {
+      "cardinality": {
+        "kind": "/_plugins/_ml/_batch_ingestion"
+      },
+      "count": 1
+    }
+  ]
+}

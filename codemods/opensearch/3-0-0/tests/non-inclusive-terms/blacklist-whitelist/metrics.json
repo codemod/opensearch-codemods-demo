@@ -1,0 +1,10 @@
+{
+  "non-inclusive-terms": [
+    {
+      "cardinality": {
+        "kind": "property-identifier"
+      },
+      "count": 4
+    }
+  ]
+}

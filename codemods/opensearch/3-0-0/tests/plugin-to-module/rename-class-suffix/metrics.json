@@ -1,0 +1,10 @@
+{
+  "plugin-to-module": [
+    {
+      "cardinality": {
+        "kind": "fqcn"
+      },
+      "count": 2
+    }
+  ]
+}

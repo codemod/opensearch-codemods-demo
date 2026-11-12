@@ -1,0 +1,22 @@
+{
+  "system-index-paths": [
+    {
+      "cardinality": {
+        "kind": "/.kibana/_search"
+      },
+      "count": 1
+    },
+    {
+      "cardinality": {
+        "kind": "/.opendistro_security/_search"
+      },
+      "count": 1
+    },
+    {
+      "cardinality": {
+        "kind": "/.tasks/_search"
+      },
+      "count": 1
+    }
+  ]
+}

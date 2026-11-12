@@ -1,0 +1,16 @@
+{
+  "remove-transport-nio": [
+    {
+      "cardinality": {
+        "kind": "plugin-list"
+      },
+      "count": 1
+    },
+    {
+      "cardinality": {
+        "kind": "transport-type"
+      },
+      "count": 1
+    }
+  ]
+}

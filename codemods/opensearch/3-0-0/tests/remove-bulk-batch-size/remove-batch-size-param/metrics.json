@@ -1,0 +1,10 @@
+{
+  "remove-bulk-batch-size": [
+    {
+      "cardinality": {
+        "kind": "batch_size"
+      },
+      "count": 1
+    }
+  ]
+}

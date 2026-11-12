@@ -1,0 +1,10 @@
+{
+  "remove-discover-new-experience": [
+    {
+      "cardinality": {
+        "kind": "discover:newExperience"
+      },
+      "count": 1
+    }
+  ]
+}

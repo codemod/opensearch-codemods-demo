@@ -1,0 +1,10 @@
+{
+  "sql-plugin-removals": [
+    {
+      "cardinality": {
+        "kind": "opendistro-endpoint"
+      },
+      "count": 3
+    }
+  ]
+}

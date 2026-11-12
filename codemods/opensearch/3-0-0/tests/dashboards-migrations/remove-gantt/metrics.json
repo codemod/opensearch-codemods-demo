@@ -1,0 +1,16 @@
+{
+  "dashboards-migrations": [
+    {
+      "cardinality": {
+        "kind": "dashboards-visualizations"
+      },
+      "count": 1
+    },
+    {
+      "cardinality": {
+        "kind": "gantt_vis"
+      },
+      "count": 1
+    }
+  ]
+}

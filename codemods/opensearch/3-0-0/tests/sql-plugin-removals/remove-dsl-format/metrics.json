@@ -1,0 +1,10 @@
+{
+  "sql-plugin-removals": [
+    {
+      "cardinality": {
+        "kind": "responseFormat"
+      },
+      "count": 1
+    }
+  ]
+}

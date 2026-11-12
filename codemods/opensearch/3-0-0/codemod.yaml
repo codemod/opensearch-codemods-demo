@@ -1,7 +1,7 @@
 schema_version: "1.0"
 
 name: "opensearch-2-x-to-3-0"
-version: "0.1.0"
+version: "0.2.0"
 description: "Migrate OpenSearch application code and checked-in config from 2.x to 3.0"
 author: "alexbit-codemod <alex@codemod.com>"
 license: "MIT"
@@ -18,6 +18,8 @@ keywords:
   - "path_hierarchy"
   - "workload-group"
   - "knn"
+  - "sql"
+  - "jdk21"
 
 registry:
   access: "public"

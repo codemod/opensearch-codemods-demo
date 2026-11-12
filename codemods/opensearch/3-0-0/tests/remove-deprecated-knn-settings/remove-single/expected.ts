@@ -1,0 +1,4 @@
+export const settings = {
+  
+  "index.number_of_replicas": 1,
+};

@@ -1,0 +1,10 @@
+{
+  "nmslib-engine-to-faiss": [
+    {
+      "cardinality": {
+        "kind": "engine-value"
+      },
+      "count": 1
+    }
+  ]
+}

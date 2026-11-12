@@ -12,45 +12,181 @@ nodes:
           js_file: scripts/codemod.ts
           base_path: "."
           language: "typescript"
-          include:
-            - "**/*.{ts,tsx,mts,cts}"
-          exclude:
-            - "**/node_modules/**"
-            - "**/dist/**"
-            - "**/build/**"
+          include: ["**/*.{ts,tsx,mts,cts}"]
+          exclude: ["**/node_modules/**", "**/dist/**", "**/build/**"]
 
       - name: "Rename query groups to workload groups"
         js-ast-grep:
           js_file: scripts/query-group-to-workload-group.ts
           base_path: "."
           language: "typescript"
-          include:
-            - "**/*.{ts,tsx,mts,cts}"
-          exclude:
-            - "**/node_modules/**"
-            - "**/dist/**"
-            - "**/build/**"
+          include: ["**/*.{ts,tsx,mts,cts}"]
+          exclude: ["**/node_modules/**", "**/dist/**", "**/build/**"]
 
       - name: "Remove compatibility.override_main_response_version"
         js-ast-grep:
           js_file: scripts/remove-compatibility-override.ts
           base_path: "."
           language: "typescript"
-          include:
-            - "**/*.{ts,tsx,mts,cts}"
-          exclude:
-            - "**/node_modules/**"
-            - "**/dist/**"
-            - "**/build/**"
+          include: ["**/*.{ts,tsx,mts,cts}"]
+          exclude: ["**/node_modules/**", "**/dist/**", "**/build/**"]
 
       - name: "Remove deprecated k-NN settings"
         js-ast-grep:
           js_file: scripts/remove-deprecated-knn-settings.ts
           base_path: "."
           language: "typescript"
-          include:
-            - "**/*.{ts,tsx,mts,cts}"
-          exclude:
-            - "**/node_modules/**"
-            - "**/dist/**"
-            - "**/build/**"
+          include: ["**/*.{ts,tsx,mts,cts}"]
+          exclude: ["**/node_modules/**", "**/dist/**", "**/build/**"]
+
+      - name: "Remove index.store.hybrid.mmap.extensions"
+        js-ast-grep:
+          js_file: scripts/remove-mmap-extensions.ts
+          base_path: "."
+          language: "typescript"
+          include: ["**/*.{ts,tsx,mts,cts}"]
+          exclude: ["**/node_modules/**", "**/dist/**", "**/build/**"]
+
+      - name: "Remove deprecated thread_pool.test queue settings"
+        js-ast-grep:
+          js_file: scripts/remove-thread-pool-test-settings.ts
+          base_path: "."
+          language: "typescript"
+          include: ["**/*.{ts,tsx,mts,cts}"]
+          exclude: ["**/node_modules/**", "**/dist/**", "**/build/**"]
+
+      - name: "Remove deprecated bulk batch_size"
+        js-ast-grep:
+          js_file: scripts/remove-bulk-batch-size.ts
+          base_path: "."
+          language: "typescript"
+          include: ["**/*.{ts,tsx,mts,cts}"]
+          exclude: ["**/node_modules/**", "**/dist/**", "**/build/**"]
+
+      - name: "Remove discover:newExperience setting"
+        js-ast-grep:
+          js_file: scripts/remove-discover-new-experience.ts
+          base_path: "."
+          language: "typescript"
+          include: ["**/*.{ts,tsx,mts,cts}"]
+          exclude: ["**/node_modules/**", "**/dist/**", "**/build/**"]
+
+      - name: "SQL plugin removals and OpenDistro endpoint rewrite"
+        js-ast-grep:
+          js_file: scripts/sql-plugin-removals.ts
+          base_path: "."
+          language: "typescript"
+          include: ["**/*.{ts,tsx,mts,cts}"]
+          exclude: ["**/node_modules/**", "**/dist/**", "**/build/**"]
+
+      - name: "Legacy BM25 similarity → BM25"
+        js-ast-grep:
+          js_file: scripts/legacy-bm25-to-bm25.ts
+          base_path: "."
+          language: "typescript"
+          include: ["**/*.{ts,tsx,mts,cts}"]
+          exclude: ["**/node_modules/**", "**/dist/**", "**/build/**"]
+
+      - name: "NMSLIB engine → Faiss"
+        js-ast-grep:
+          js_file: scripts/nmslib-engine-to-faiss.ts
+          base_path: "."
+          language: "typescript"
+          include: ["**/*.{ts,tsx,mts,cts}"]
+          exclude: ["**/node_modules/**", "**/dist/**", "**/build/**"]
+
+      - name: "COMPAT locale provider → CLDR"
+        js-ast-grep:
+          js_file: scripts/locale-compat-to-cldr.ts
+          base_path: "."
+          language: "typescript"
+          include: ["**/*.{ts,tsx,mts,cts}"]
+          exclude: ["**/node_modules/**", "**/dist/**", "**/build/**"]
+
+      - name: "Apache HttpClient 4.x class names → HttpClient 5.x"
+        js-ast-grep:
+          js_file: scripts/httpclient5-imports.ts
+          base_path: "."
+          language: "typescript"
+          include: ["**/*.{ts,tsx,mts,cts}"]
+          exclude: ["**/node_modules/**", "**/dist/**", "**/build/**"]
+
+      - name: "JPMS client package move"
+        js-ast-grep:
+          js_file: scripts/jpms-client-package.ts
+          base_path: "."
+          language: "typescript"
+          include: ["**/*.{ts,tsx,mts,cts}"]
+          exclude: ["**/node_modules/**", "**/dist/**", "**/build/**"]
+
+      - name: "ML Commons CatIndexTool and batch ingestion URL"
+        js-ast-grep:
+          js_file: scripts/ml-commons.ts
+          base_path: "."
+          language: "typescript"
+          include: ["**/*.{ts,tsx,mts,cts}"]
+          exclude: ["**/node_modules/**", "**/dist/**", "**/build/**"]
+
+      - name: "Non-inclusive term renames"
+        js-ast-grep:
+          js_file: scripts/non-inclusive-terms.ts
+          base_path: "."
+          language: "typescript"
+          include: ["**/*.{ts,tsx,mts,cts}"]
+          exclude: ["**/node_modules/**", "**/dist/**", "**/build/**"]
+
+      - name: "Plugin class suffix → Module"
+        js-ast-grep:
+          js_file: scripts/plugin-to-module.ts
+          base_path: "."
+          language: "typescript"
+          include: ["**/*.{ts,tsx,mts,cts}"]
+          exclude: ["**/node_modules/**", "**/dist/**", "**/build/**"]
+
+      - name: "Remove transport-nio plugin"
+        js-ast-grep:
+          js_file: scripts/remove-transport-nio.ts
+          base_path: "."
+          language: "typescript"
+          include: ["**/*.{ts,tsx,mts,cts}"]
+          exclude: ["**/node_modules/**", "**/dist/**", "**/build/**"]
+
+      - name: "Swap Nodes API indexing buffer field consumers"
+        js-ast-grep:
+          js_file: scripts/swap-indexing-buffer-fields.ts
+          base_path: "."
+          language: "typescript"
+          include: ["**/*.{ts,tsx,mts,cts}"]
+          exclude: ["**/node_modules/**", "**/dist/**", "**/build/**"]
+
+      - name: "Normalize node.roles empty-array strings"
+        js-ast-grep:
+          js_file: scripts/empty-array-string-to-array.ts
+          base_path: "."
+          language: "typescript"
+          include: ["**/*.{ts,tsx,mts,cts}"]
+          exclude: ["**/node_modules/**", "**/dist/**", "**/build/**"]
+
+      - name: "JDK 21 runtime markers"
+        js-ast-grep:
+          js_file: scripts/jdk21-runtime.ts
+          base_path: "."
+          language: "typescript"
+          include: ["**/*.{ts,tsx,mts,cts}"]
+          exclude: ["**/node_modules/**", "**/dist/**", "**/build/**"]
+
+      - name: "Rewrite removed system-index REST paths"
+        js-ast-grep:
+          js_file: scripts/system-index-paths.ts
+          base_path: "."
+          language: "typescript"
+          include: ["**/*.{ts,tsx,mts,cts}"]
+          exclude: ["**/node_modules/**", "**/dist/**", "**/build/**"]
+
+      - name: "Dashboards visualization and notebook config"
+        js-ast-grep:
+          js_file: scripts/dashboards-migrations.ts
+          base_path: "."
+          language: "typescript"
+          include: ["**/*.{ts,tsx,mts,cts}"]
+          exclude: ["**/node_modules/**", "**/dist/**", "**/build/**"]

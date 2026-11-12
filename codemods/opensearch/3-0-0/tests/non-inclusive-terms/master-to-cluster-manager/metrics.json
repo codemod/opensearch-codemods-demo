@@ -1,0 +1,16 @@
+{
+  "non-inclusive-terms": [
+    {
+      "cardinality": {
+        "kind": "string-literal"
+      },
+      "count": 2
+    },
+    {
+      "cardinality": {
+        "kind": "string-substring"
+      },
+      "count": 1
+    }
+  ]
+}

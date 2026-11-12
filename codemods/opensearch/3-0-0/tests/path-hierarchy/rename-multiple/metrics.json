@@ -1,0 +1,10 @@
+{
+  "path-hierarchy-tokenizer": [
+    {
+      "cardinality": {
+        "kind": "string-literal"
+      },
+      "count": 2
+    }
+  ]
+}

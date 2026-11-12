@@ -1,0 +1,10 @@
+{
+  "jdk21-runtime": [
+    {
+      "cardinality": {
+        "kind": "engines.java"
+      },
+      "count": 1
+    }
+  ]
+}

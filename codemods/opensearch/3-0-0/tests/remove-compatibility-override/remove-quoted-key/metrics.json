@@ -1,0 +1,10 @@
+{
+  "remove-compatibility-override": [
+    {
+      "cardinality": {
+        "kind": "object-pair"
+      },
+      "count": 1
+    }
+  ]
+}

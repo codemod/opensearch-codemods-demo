@@ -1,0 +1,22 @@
+{
+  "remove-deprecated-knn-settings": [
+    {
+      "cardinality": {
+        "kind": "index.knn.algo_param.ef_construction"
+      },
+      "count": 1
+    },
+    {
+      "cardinality": {
+        "kind": "index.knn.algo_param.m"
+      },
+      "count": 1
+    },
+    {
+      "cardinality": {
+        "kind": "index.knn.space_type"
+      },
+      "count": 1
+    }
+  ]
+}

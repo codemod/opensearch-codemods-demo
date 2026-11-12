@@ -1,0 +1,10 @@
+{
+  "empty-array-string-to-array": [
+    {
+      "cardinality": {
+        "kind": "node.roles"
+      },
+      "count": 1
+    }
+  ]
+}

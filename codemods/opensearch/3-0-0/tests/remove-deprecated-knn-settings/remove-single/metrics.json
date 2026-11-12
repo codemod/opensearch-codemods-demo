@@ -1,0 +1,10 @@
+{
+  "remove-deprecated-knn-settings": [
+    {
+      "cardinality": {
+        "kind": "knn.plugin.enabled"
+      },
+      "count": 1
+    }
+  ]
+}

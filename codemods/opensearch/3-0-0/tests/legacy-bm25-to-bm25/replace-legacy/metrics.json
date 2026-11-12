@@ -1,0 +1,10 @@
+{
+  "legacy-bm25-to-bm25": [
+    {
+      "cardinality": {
+        "kind": "LegacyBM25Similarity"
+      },
+      "count": 1
+    }
+  ]
+}

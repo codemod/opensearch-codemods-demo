@@ -1,0 +1,16 @@
+{
+  "jpms-client-package": [
+    {
+      "cardinality": {
+        "kind": "org.opensearch.client.RestClient"
+      },
+      "count": 1
+    },
+    {
+      "cardinality": {
+        "kind": "org.opensearch.client.RestHighLevelClient"
+      },
+      "count": 1
+    }
+  ]
+}

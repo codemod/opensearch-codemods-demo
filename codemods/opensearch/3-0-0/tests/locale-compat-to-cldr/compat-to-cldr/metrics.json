@@ -1,0 +1,10 @@
+{
+  "locale-compat-to-cldr": [
+    {
+      "cardinality": {
+        "kind": "jvm-flag"
+      },
+      "count": 1
+    }
+  ]
+}
